@@ -309,6 +309,21 @@
     gap: 15px;
   }
 
+  .sede-link {
+        padding: 10px 20px; /* Aumentei o padding para melhor toque */
+        margin-top: -60px;
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+        font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
+      }
+
+      .site-link {
+         padding: 10px 20px; /* Aumentei o padding para melhor toque */
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+        font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
+      }
+
     }
 
       /* Telas pequenas */
@@ -632,8 +647,16 @@
         margin-top: 25px; /* Mais espaço acima dos botões */
       }
       
-      .sede-link, .site-link {
+      .sede-link {
         padding: 10px 20px; /* Aumentei o padding para melhor toque */
+        margin-top: -60px;
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+        font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
+      }
+
+      .site-link {
+         padding: 10px 20px; /* Aumentei o padding para melhor toque */
         width: 100%; /* Ocupa toda a largura */
         text-align: center;
         font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
