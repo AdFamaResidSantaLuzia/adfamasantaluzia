@@ -91,3 +91,9 @@ function closeLightbox() {
   video.src = ''; // Para parar o vídeo
   document.body.style.overflow = 'auto';
 }
+
+fetch('https://api.countapi.xyz/hit/adfamasantaluzia/homepage')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('contador').textContent = data.value;
+    });
