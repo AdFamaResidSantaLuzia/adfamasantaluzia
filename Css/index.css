@@ -1,0 +1,902 @@
+/* Estilos personalizados */
+    body {
+      padding-top: 120px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .p-cultos {
+      font-size: 15px;
+      text-align: center;
+    }
+
+  .sem-programações {
+   color: red;
+  }
+
+   /* Container principal */
+.links-uteis-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.titulo-links {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Links do rodapé */
+.links-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.links-rodape a {
+  color: #df6819;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+.links-rodape a:hover {
+  color: #eada19;
+  text-decoration: underline;
+}
+
+.separador {
+  color: #ddd;
+  padding: 0 5px;
+}
+
+    .text-eventos {
+      color: rgb(0, 0, 0);
+      text-align: center;
+     
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      height: 50px;
+    }
+    
+    .nav-link {
+      font-size: 14px ;
+      padding: 8px 15px;
+      transition: all 0.3s ease;
+      color: #df6819 !important;
+    }
+    
+    .nav-link:hover {
+      color: #eada19 !important;
+      transform: translateY(-2px);
+    }
+    
+    .container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 1.8rem;
+      color: #343a40;
+      position: relative;
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #df6819;
+    }
+    
+    /* Estilos da tabela */
+    .table-responsive {
+      margin: 30px auto;
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .table {
+      margin-bottom: 0;
+    }
+    
+    .table th {
+      background-color: #eada19;
+      color: rgb(0, 0, 0);
+      border: none;
+    }
+    
+    .table td {
+      vertical-align: middle;
+    }
+    
+    .table-hover tbody tr:hover {
+      background-color: rgba(0, 123, 255, 0.1);
+    }
+    
+    /* Estilos do mapa */
+    .map-container {
+      margin: 50px auto;
+      max-width: 1000px;
+      padding: 0 15px;
+    }
+    
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%; /* Proporção 16:9 */
+      position: relative;
+      height: 0;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border: 1px solid #dee2e6;
+    }
+    
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border: none;
+    }
+    
+    /* Responsividade com diferentes tamanhos de telas */
+
+    /* Telas grandes */
+    @media (max-width: 992px) { 
+      body {
+        padding-top: 80px;
+      }
+.content-section {
+    padding: 30px;
+    margin: 25px 20px;
+  }
+      
+      .logo img {
+        height: 55px;
+      }
+  
+     .p-cultos {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .regional-label {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+        margin-top: 3px;
+      }
+
+      .nav-link {
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 1rem;
+      }
+
+       .sede-content {
+        flex-direction: column;
+        gap: 30px;
+      }
+      
+      .sede-image, .sede-info {
+        flex: none;
+        width: 100%;
+      }
+
+      .links-rodape {
+    gap: 8px;
+  }
+  .links-rodape a {
+    font-size: 0.9rem;
+  }
+
+      }
+    
+    /* Telas médias */
+    @media (max-width: 768px) {
+      body {
+      padding-top: 120px;
+     }
+
+    .content-section {
+    padding: 25px;
+    margin: 20px 15px;
+    border-radius: 8px;
+  }
+      
+      h2 {
+        font-size: 1.5rem;
+        margin: 30px 0 20px;
+      }
+      
+      .table th, 
+      .table td {
+        padding: 10px;
+      }
+      
+    .map-container {
+        margin: 30px auto;
+    }
+
+    .p-cultos {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 1rem;
+      }
+
+      .navbar-brand-content {
+        align-items: center;
+      }
+      
+      .regional-label {
+        font-size: 0.65rem;
+        padding: 2px 8px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .footer-links a {
+        margin: 5px 0;
+      }
+
+        .sede-section {
+        padding: 40px 0;
+      }
+      
+      .sede-title {
+        font-size: 1.7rem;
+      }
+
+      
+     .gallery-item,
+      .gallery-img-container {
+        width: 150px;
+        height: 160px;
+      }
+      
+      .eventos-title {
+        font-size: 1.7rem;
+      }
+
+       .links-rodape {
+    gap: 6px;
+  }
+  .separador {
+    display: none; /* Remove as barras em telas menores */
+  }
+  .links-rodape a {
+    padding: 8px 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 2px 0;
+  }
+
+   .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+    }
+
+      /* Telas pequenas */
+    @media (max-width: 576px) {
+      body {
+        padding-top: 100px;
+      }
+ .content-section {
+    padding: 20px 15px;
+    margin: 15px 10px;
+  }
+      
+      .logo img {
+          height: 40px;
+          transition: all 0.3s ease;
+      }
+
+      .p-cultos {
+      font-size: 11px;
+      text-align: center;
+    }
+      
+      h2 {
+        font-size: 1.2rem;
+        margin: 25px 0 15px;
+      }
+      
+      h2::after {
+        width: 60px;
+        height: 2px;
+      }
+    
+      .sede-title {
+        font-size: 3rem;
+      }
+
+      .table {
+        font-size: 0.9rem;
+      }
+      
+      .table th, 
+      .table td {
+        padding: 8px;
+      }
+      
+      .map-responsive {
+        padding-bottom: 80%; /* Proporção mais alta para mobile */
+      }
+      
+      .nav-link {
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+      
+      .regional-label {
+        font-size: 0.40rem;
+        padding: 2px 6px;
+      }
+
+     .gallery-item,
+      .gallery-img-container {
+        width: 140px;
+        height: 140px;
+      }
+      
+     
+      .gallery-container {
+        gap: 15px;
+      }
+
+    .links-rodape {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .links-rodape a {
+    width: 100%;
+    text-align: center;
+  }
+      
+      .sede-link {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+
+      .gallery-item {
+        width: 200px;
+      }
+
+       .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+    }
+     /* NOVOS ESTILOS PARA O REGIONAL 33 ABAIXO DA LOGO */
+    .navbar-brand-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .regional-label {
+      margin-top: 5px;
+      padding: 4px 12px;
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
+      border-radius: 50px;
+      font-size: 0.50rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0, 86, 179, 0.3);
+      position: relative;
+      overflow: hidden;
+      border: none;
+      transition: all 0.5s ease;
+      align-self: center; /* Centraliza abaixo da logo */
+      text-align: center;
+      width: fit-content;
+    }
+    
+    .regional-label::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+      );
+      transform: rotate(30deg);
+      transition: all 0.5s ease;
+    }
+    
+    .regional-label:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 86, 179, 0.4);
+    }
+    
+    .regional-label:hover::before {
+      left: 100%;
+    }
+    
+    
+    /* Estilos adicionais para o rodapé */
+    footer {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 10px 0;
+      margin-top: 50px;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      max-height: 50px;
+      margin-bottom: 15px;
+    }
+    
+    .footer-links {
+      margin: 20px 0;
+    }
+    
+    .footer-links a {
+      color: rgba(0, 0, 0, 0.7);
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+    
+    .navbar {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Bsranco com 80% de opacidade */
+  backdrop-filter: blur(3px); /* Efeito de desfoque para melhor legibilidade */
+  -webkit-backdrop-filter: blur(8px); /* Para compatibilidade com Safari */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #df6819!important; /* Cor principal com 80% de opacidade */
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #eada19 !important; /* Cor hover com 90% de opacidade */
+  text-decoration: underline;
+}
+
+.navbar-shrink {
+  background-color: rgba(255, 255, 255, 0.9) !important; /* Fica um pouco menos transparente */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para a seção da sede */
+    .sede-section {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      margin: 20px 0;
+    }
+    
+    .sede-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .sede-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    .sede-image {
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .sede-image:hover {
+      transform: translateY(-5px);
+    }
+    
+    .sede-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .sede-info {
+      flex: 1;
+    }
+    
+    .sede-title {
+      color: #000000;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    
+    .sede-description {
+      color: #495057;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    
+    .sede-link {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #eada19;
+      color: rgb(0, 0, 0);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,123,255,0.3);
+    }
+    
+    .sede-link:hover {
+      background-color: #df6819;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+      color: white;
+    }
+       
+    
+
+    .site-link {
+      display: inline-block;
+      margin-left: 0;
+      padding: 8px 20px;
+      background-color: #eada19;
+      color: rgb(0, 0, 0);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .site-link:hover {
+      background-color: #df6819;
+      transform: translateY(-2px);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    
+      /* Ajustes específicos para telas muito pequenas */
+    @media (max-width: 500px) {
+      .links-container {
+        gap: 12px; /* Aumentei o espaçamento vertical */
+        margin-top: 25px; /* Mais espaço acima dos botões */
+      }
+      
+      .sede-link, .site-link {
+        padding: 10px 20px; /* Aumentei o padding para melhor toque */
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+        font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
+      }
+      
+      .sede-description {
+        font-size: 0.95rem; /* Ajuste de legibilidade */
+        line-height: 1.7; /* Mais espaçamento entre linhas */
+      }
+      
+    }
+
+        /* Ajuste extra para telas muito pequenas (320px) */
+    @media (max-width: 320px) {
+      .links-container {
+        gap: 10px; /* Espaçamento ainda maior */
+      }
+      
+      .sede-section {
+        padding: 30px 20px; /* Mais espaço interno */
+      }
+      
+      .sede-title {
+        font-size: 1.3rem; /* Título um pouco menor */
+      }
+
+       .text-eventos {
+        font-size: 0.85rem;
+
+    }
+     
+    }
+
+    .p-pastormenssagem {
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    h5 {
+      text-align: center;
+      word-wrap: normal;
+      font-size: 1rem;
+    }
+
+    .p-sede {
+      text-align: justify;
+    }
+
+     .atalhos-faceis-rodape {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    .links-rodape {
+      text-align: center;
+      font-size: 0.8rem;
+      display: flexbox;
+    }
+
+   .eventos-section {
+      padding: 10px;
+      background-color: #f8f9fa;
+    }
+    
+    .eventos-title {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .eventos-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #df6819;
+    }
+    
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      padding: 0 50px;
+    }
+    
+    .gallery-item {
+      width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      height: fit-content; /* Corrige espaçamento extra */
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-img-container {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+    }
+    
+    .gallery-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .image-caption {
+      padding: 12px;
+      background: white;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .lightbox-content {
+     max-width: 90vw;  /* 90% da largura da tela */
+     max-height: 90vh; /* 90% da altura da tela */
+     object-fit: contain; /* Mantém proporção sem cortar */
+}
+    
+    .lightbox-content img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 80vh;
+      border-radius: 8px;
+    }
+    
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Adicione isso ao seu estilo existente */
+
+
+.lightbox {
+  z-index: 1050; /* Acima da navbar que geralmente tem z-index 1030 */
+}
+
+/* Navbar transition */
+.navbar {
+  transition: opacity 0.5s ease, visibility 0.3s ease;
+}
+
+/* Hide navbar when lightbox is open */
+.lightbox-open .navbar {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Lightbox styling */
+.lightbox {
+  z-index: 1050;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(0, 123, 255, 0.7); /* 70% de opacidade */
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(); /* Efeito de vidro */
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 86, 179, 0.9); /* 90% no hover */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ícone mais elegante */
+.back-to-top i {
+  margin-top: 2px;
+}
+
+/* Estilo unificado para todas as seções de conteúdo */
+.content-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin: 10px auto;
+  max-width: 1200px;
+    width: 100%; /* Ocupa 100% da largura */
+
+}
+
+/* Espaçamento entre seções */
+.section-spacer {
+  height: 20px;
+}
+
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #c7c7c7;
+  margin: 40px 0;
+  width: 100%;
+}
