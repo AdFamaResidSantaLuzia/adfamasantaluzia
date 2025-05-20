@@ -216,11 +216,7 @@
     font-size: 0.9rem;
   }
 
-   .instagram-float a {
-        width: 48px;
-        height: 48px;
-        font-size: 22px;
-    }
+  
 
       }
     
@@ -331,12 +327,7 @@
         font-size: 0.9rem; /* Tamanho de fonte ligeiramente maior */
       }
 
-     .instagram-float a {
-        width: 44px;
-        height: 44px;
-        font-size: 20px;
-    }
-
+     
     }
 
       /* Telas pequenas */
@@ -431,15 +422,6 @@
     gap: 10px;
   }
 
-   .instagram-float {
-        bottom: 25px;
-        right: 25px;
-    }
-    .instagram-float a {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
     }
      /* NOVOS ESTILOS PARA O REGIONAL 33 ABAIXO DA LOGO */
     .navbar-brand-content {
@@ -690,12 +672,6 @@
         line-height: 1.7; /* Mais espaçamento entre linhas */
       }
 
-      .instagram-float a {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
-    }
-
     }
 
         /* Ajuste extra para telas muito pequenas (320px) */
@@ -717,16 +693,6 @@
 
     }
 
-        .instagram-float {
-        bottom: 20px;
-        left: 15px;
-    }
-    .instagram-float a {
-        width: 32px;
-        height: 32px;
-        font-size: 14px;
-        border-width: 1px;
-    }
 
     }
 
@@ -964,25 +930,3 @@
   width: 100%;
 }
 
-/* --- Botão do Instagram (círculo) --- */
-.instagram-float {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    z-index: 1000;
-}
-
-.instagram-float a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    color: white;
-    font-size: 24px;
-    border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(188, 24, 136, 0.5);
-    border: 2px solid white;
-    transition: all 0.3s ease;
-}
