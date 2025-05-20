@@ -930,3 +930,10 @@
   width: 100%;
 }
 
+.barra-fina {
+  width: 3%;          /* Ocupa 60% da largura da tela */
+  height: 2px;         /* Espessura da barra */
+  background-color: #b5b3b3; /* Cor neutra */
+  margin: 20px auto;   /* Espaço e centralização */
+  border-radius: 2px;
+}
