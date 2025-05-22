@@ -719,6 +719,10 @@ td {
   box-shadow: 0 5px 15px rgba(234, 218, 25, 0.2);
 }
 
+.Visitantes {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 /* ADPATAÇÕES COM DIFERENTES TELAS */
     
