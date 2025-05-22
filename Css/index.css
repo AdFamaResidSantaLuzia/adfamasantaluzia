@@ -723,6 +723,23 @@ td {
   text-align: center;
 }
 
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #666;
+  font-weight: bold;
+}
+
+.contador img {
+  height: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 /* MEDIA QUERIES */
 /* ADPATAÇÕES COM DIFERENTES TELAS */
     
