@@ -11,10 +11,6 @@
       text-align: center;
     }
 
-    p {
-      text-align: center;
-    }
-
 
    /* Container principal */
 .links-uteis-container {
@@ -112,7 +108,7 @@
     
 /* Container */
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -980,6 +976,10 @@ td {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
   }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Ajustes específicos para telas muito pequenas */
@@ -1009,6 +1009,10 @@ td {
         line-height: 1.7; /* Mais espaçamento entre linhas */
       }
 
+      .cards-container {
+    grid-template-columns: 1fr;
+  }
+
     }
 
         /* Ajuste extra para telas muito pequenas (320px) */
@@ -1028,7 +1032,10 @@ td {
        .text-eventos {
         color:#000000;
         font-size: 0.85rem;
-
     }
+
+    .cards-container {
+    grid-template-columns: 1fr;
+  }
 
     }
