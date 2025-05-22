@@ -740,6 +740,11 @@ td {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+.Brave {
+  text-align: center;
+  padding: 10px;
+}
+
 /* MEDIA QUERIES */
 /* ADPATAÇÕES COM DIFERENTES TELAS */
     
@@ -1001,6 +1006,7 @@ td {
   .cards-container {
     grid-template-columns: 1fr;
   }
+
 }
 
 /* Ajustes específicos para telas muito pequenas */
