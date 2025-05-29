@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADFama Resid Sta Luzia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Otimização: Carregamento não bloqueante de CSS via preload -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></noscript>
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
   <link rel="stylesheet" type="text/css" href="Css/index.css" />
 </head>
 <body>
@@ -17,7 +23,7 @@
     <div class="d-flex flex-column align-items-center">
       <a class="navbar-brand" href="#">
         <div class="logo">
-          <img src="Img/ADFamalogo.png" alt="Logo da Igreja">
+          <img src="Img/ADFamalogo.webp" alt="Logo da Igreja" loading="lazy">
         </div>
       </a>
       <h6 class="regional-label mt-1">Regional 33</h6>
@@ -46,7 +52,7 @@
 <section class="destaque-igreja">
   <div class="container">
     <div class="img-container">
-      <img src="Img/FachadaAdfamaSantaLuzia.jpg" alt="Fachada da ADFama Santa Luzia" title="Fachada da ADFama Santa Luzia" class="img-destaque">
+      <img src="Img/FachadaAdfamaSantaLuzia.webp" alt="Fachada da ADFama Santa Luzia" title="Fachada da ADFama Santa Luzia" class="img-destaque" loading="lazy">
       </div>
     </div>
 
@@ -139,25 +145,25 @@ Pr. JC Silva</p></div>
     
     <div class="gallery-container">
       <!-- Item 1 -->
-      <div class="gallery-item" onclick="openLightbox('Img/Batismonasaguas.jpg')">
+      <div class="gallery-item" onclick="openLightbox('Img/Batismonasaguas.webp')">
         <div class="gallery-img-container">
-          <img src="Img/Batismonasaguas.jpg" alt="Batismos nas Águas">
+          <img src="Img/Batismonasaguas.webp" alt="Batismos nas Águas" loading="lazy">
         </div>
         <div class="image-caption">Batismos nas Águas</div>
       </div>
       
       <!-- Item 2 -->
-      <div class="gallery-item" onclick="openLightbox('Img/Incendiados.jpg')">
+      <div class="gallery-item" onclick="openLightbox('Img/Incendiados.webp')">
         <div class="gallery-img-container">
-          <img src="Img/Incendiados.jpg" alt="Evento Incendiados">
+          <img src="Img/Incendiados.webp" alt="Evento Incendiados" loading="lazy">
         </div>
         <div class="image-caption">Incendiados</div>
       </div>
 
       <!-- Item 3 -->
-      <div class="gallery-item" onclick="openLightbox('Img/Cultosdeensino.jpg')">
+      <div class="gallery-item" onclick="openLightbox('Img/Cultosdeensino.webp')">
         <div class="gallery-img-container">
-          <img src="Img/Cultosdeensino.jpg" alt="Culto de Ensino">
+          <img src="Img/Cultosdeensino.webp" alt="Culto de Ensino" loading="lazy">
         </div>
         <div class="image-caption">Culto de Ensino todas as Terças-Feiras</div>
       </div>
@@ -174,7 +180,7 @@ Pr. JC Silva</p></div>
   <div class="container sede-container">
     <div class="sede-content">
       <div class="sede-image">
-          <img src="Img/ADFamaSEDE.jpg" alt="Fachada da Sede da Igreja">
+          <img src="Img/ADFamaSEDE.jpg" alt="Fachada da Sede da Igreja" loading="lazy">
         </a>
       </div>
       <div class="sede-info">
@@ -215,105 +221,105 @@ Pr. JC Silva</p></div>
       <!-- Item 1 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem1.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem1.jpg">
+          <img src="Galeria/Imagem1.jpg" loading="lazy">
         </div>
       </div>
       
       <!-- Item 2 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem2.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem2.jpg" >
+          <img src="Galeria/Imagem2.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 3 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem3.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem3.jpg">
+          <img src="Galeria/Imagem3.jpg" loading="lazy">
         </div>
       </div>
 
     <!-- Item 4 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem5.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem5.jpg">
+          <img src="Galeria/Imagem5.jpg" loading="lazy">
         </div>
       </div>
 
        <!-- Item 5 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem6.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem6.jpg">
+          <img src="Galeria/Imagem6.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 6 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem7.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem7.jpg" >
+          <img src="Galeria/Imagem7.jpg" loading="lazy">
         </div>
       </div>
 
        <!-- Item 7 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem8.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem8.jpg" >
+          <img src="Galeria/Imagem8.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 8 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem9.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem9.jpg" >
+          <img src="Galeria/Imagem9.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 9 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem10.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem10.jpg" >
+          <img src="Galeria/Imagem10.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 10 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem11.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem11.jpg" >
+          <img src="Galeria/Imagem11.jpg" loading="lazy">
         </div>
       </div>
 
        <!-- Item 11 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem12.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem12.jpg" >
+          <img src="Galeria/Imagem12.jpg" loading="lazy">
         </div>
       </div>
 
       <!-- Item 12 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem13.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem13.jpg" >
+          <img src="Galeria/Imagem13.jpg" loading="lazy">
         </div>
       </div>
 
        <!-- Item 13 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem14.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem14.jpg" >
+          <img src="Galeria/Imagem14.jpg" loading="lazy">
         </div>
       </div>
 
         <!-- Item 14 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem15.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem15.jpg" >
+          <img src="Galeria/Imagem15.jpg" loading="lazy">
         </div>
       </div>
 
        <!-- Item 15 -->
       <div class="gallery-item" onclick="openLightbox('Galeria/Imagem16.jpg')">
         <div class="gallery-img-container">
-          <img src="Galeria/Imagem16.jpg" >
+          <img src="Galeria/Imagem16.jpg" loading="lazy">
         </div>
       </div>
 
@@ -438,7 +444,7 @@ Pr. JC Silva</p></div>
 
   <div class="container">
     <div class="footer-content">
-  <img src="Img/ADFamalogo.png" alt="Logo da Igreja" class="footer-logo">
+  <img src="Img/ADFamalogo.webp" alt="Logo da Igreja" class="footer-logo" loading="lazy">
 <div class="copyright">
         <p>&copy; <span id="current-year"></span> Assembleia de Deus Ministério Fama Residencial Santa Luzia - Regional 33. Todos os direitos reservados.</p>
       </div>
@@ -448,9 +454,9 @@ Pr. JC Silva</p></div>
   </footer>
 
   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="Js/index.js" defer></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="Js/index.js"></script>
 
   <script>
   // Atualiza o ano automaticamente
