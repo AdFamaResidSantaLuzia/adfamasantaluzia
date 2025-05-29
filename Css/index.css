@@ -786,24 +786,21 @@ td {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.texto-destaque {
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  padding: 0;
+.texto-abaixo-imagem {
+    margin-top: 20px; /* Espaço entre a imagem e o texto */
+    text-align: center; /* Centraliza o texto (ou use "left" para alinhar à esquerda) */
+    padding: 0 15px; /* Adiciona margens laterais em dispositivos móveis */
 }
 
-.texto-destaque h1 {
-  color: white;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
+/* Se quiser manter o estilo original do <h1> e <p> */
+.texto-abaixo-imagem h1 {
+    font-size: 2rem;
+    color: #333;
 }
 
-.p-fachada-igreja {
-  color: white;
+.texto-abaixo-imagem p {
+    font-size: 20px;
+    color: #666;
 }
 
 /* MEDIA QUERIES */
@@ -970,7 +967,6 @@ td {
     height: 60px;
     font-size: 30px;
   }
-
   
 .img-destaque {
   width: 100%;
@@ -980,27 +976,22 @@ td {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.texto-destaque {
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  padding: 0;
+.texto-abaixo-imagem {
+    margin-top: 20px; /* Espaço entre a imagem e o texto */
+    text-align: center; /* Centraliza o texto (ou use "left" para alinhar à esquerda) */
+    padding: 0 15px; /* Adiciona margens laterais em dispositivos móveis */
 }
 
-.texto-destaque h1 {
-  color: white;
-  font-size: 2.2rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-  
-.p-fachada-igreja {
-  color: white;
-  font-size: 15px;
+/* Se quiser manter o estilo original do <h1> e <p> */
+.texto-abaixo-imagem h1 {
+    font-size: 1.5rem;
+    color: #333;
 }
 
+.texto-abaixo-imagem p {
+    font-size: 16px;
+    color: #666;
+}
 
     }
 
@@ -1110,33 +1101,22 @@ td {
     
 .img-destaque {
   width: 100%;
-  height: 400px;
+  height: 150px;
   object-fit: cover;
   border-radius:10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.texto-destaque {
-  position: absolute;
-  bottom: -10px;
-  left: 10px;
-  padding: 0;
+
+/* Se quiser manter o estilo original do <h1> e <p> */
+.texto-abaixo-imagem h1 {
+    font-size: 1.2rem;
+    color: #333;
 }
 
-.texto-destaque h1 {
-  color: white;
-  font-size: 1.3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-  
-.p-fachada-igreja {
-  color: white;
-  align-items: left;
-  font-size: 15px;
+.texto-abaixo-imagem p {
+    font-size: 13px;
+    color: #666;
 }
 
 }
@@ -1193,15 +1173,14 @@ td {
         font-size: 1.3rem; /* Título um pouco menor */
       }
 
-       .text-eventos {
-        text-decoration:underline;
-        color:#df6819;
-        font-size: 0.7rem;
-    }
-
     .cards-container {
     grid-template-columns: 1fr;
-  }
+    }
 
+.p-fachada-igreja {
+  color: rgb(0, 0, 0);
+  align-items: left;
+  font-size: 15px;
+}
 
     }
