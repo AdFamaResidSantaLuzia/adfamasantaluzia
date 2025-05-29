@@ -11,6 +11,12 @@
       text-align: center;
     }
 
+    .destaque {
+  background: linear-gradient(transparent 60%, #f8d56b 60%); /* Faixa amarela */
+  padding: 0 2px;
+  font-weight: 600;
+}
+
 
    /* Container principal */
 .links-uteis-container {
@@ -54,6 +60,7 @@
 }
 
     .text-eventos {
+      text-decoration: underline;
       color: #df6819;
       text-align: center;
      
@@ -88,7 +95,7 @@
     h2 {
       text-align: center;
       margin: 40px 0 30px;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #343a40;
       position: relative;
       padding-bottom: 10px;
@@ -745,6 +752,60 @@ td {
   padding: 10px;
 }
 
+/* Estilo inicial para as setas - escondidas por padrão */
+.nav-btn {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostra as setas apenas quando necessário e durante o hover */
+.lightbox:hover .nav-btn {
+  display: block;
+  opacity: 1;
+}
+
+/* Efeito hover suave */
+.nav-btn:hover {
+  background-color: rgba(234, 218, 25, 0.9) !important;
+}
+
+.destaque-igreja {
+  margin: 20px 0 50px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-destaque {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius:10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.texto-destaque {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  padding: 0;
+}
+
+.texto-destaque h1 {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.p-fachada-igreja {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 /* ADPATAÇÕES COM DIFERENTES TELAS */
     
@@ -909,6 +970,38 @@ td {
     height: 60px;
     font-size: 30px;
   }
+
+  
+.img-destaque {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius:10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.texto-destaque {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  padding: 0;
+}
+
+.texto-destaque h1 {
+  color: white;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+  
+.p-fachada-igreja {
+  color: white;
+  font-size: 15px;
+}
+
+
     }
 
       /* Telas pequenas */
@@ -920,6 +1013,13 @@ td {
     padding: 20px 15px;
     margin: 15px 10px;
   }
+
+   .text-eventos {
+      color: #df6819;
+      text-align: center;
+      font-size: 10px;
+
+   }
       
       .logo img {
           height: 40px;
@@ -932,7 +1032,7 @@ td {
     }
       
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 25px 0 15px;
       }
       
@@ -1007,6 +1107,39 @@ td {
     grid-template-columns: 1fr;
   }
 
+    
+.img-destaque {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius:10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.texto-destaque {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  padding: 0;
+}
+
+.texto-destaque h1 {
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+  
+.p-fachada-igreja {
+  color: white;
+  align-items: left;
+  font-size: 15px;
+}
+
+
 }
 
 /* Ajustes específicos para telas muito pequenas */
@@ -1040,10 +1173,15 @@ td {
     grid-template-columns: 1fr;
   }
 
+  
+
     }
 
         /* Ajuste extra para telas muito pequenas (320px) */
     @media (max-width: 320px) {
+     html {
+      font-size: 1.1rem;
+     }
       .links-container {
         gap: 10px; /* Espaçamento ainda maior */
       }
@@ -1057,12 +1195,14 @@ td {
       }
 
        .text-eventos {
-        color:#000000;
-        font-size: 0.85rem;
+        text-decoration:underline;
+        color:#df6819;
+        font-size: 0.7rem;
     }
 
     .cards-container {
     grid-template-columns: 1fr;
   }
+
 
     }

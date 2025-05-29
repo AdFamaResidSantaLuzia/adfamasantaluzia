@@ -1,6 +1,8 @@
 // Configurações da galeria
 let galleryImages = [];
 let currentImageIndex = 0;
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
 // Funções do Lightbox
 function openLightbox(imgSrc) {
@@ -12,11 +14,27 @@ function openLightbox(imgSrc) {
   document.getElementById('lightbox-img').src = imgSrc;
   document.getElementById('lightbox').style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  
+  updateButtons(); // Atualiza as setas ao abrir
 }
 
 function navigateGallery(direction) {
-  currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+  currentImageIndex += direction;
+  
+  // Verifica os limites do array
+  if (currentImageIndex < 0) currentImageIndex = 0;
+  if (currentImageIndex >= galleryImages.length) currentImageIndex = galleryImages.length - 1;
+  
   document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+  updateButtons(); // Atualiza as setas após navegação
+}
+
+function updateButtons() {
+  // Esconde seta anterior se for a primeira imagem
+  prevBtn.style.display = currentImageIndex === 0 ? 'none' : 'block';
+  
+  // Esconde próxima seta se for a última imagem
+  nextBtn.style.display = currentImageIndex === galleryImages.length - 1 ? 'none' : 'block';
 }
 
 function closeLightbox() {
