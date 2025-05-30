@@ -799,7 +799,7 @@ td {
 }
 
 .texto-abaixo-imagem p {
-    font-size: 20px;
+    font-size: 30px;
     color: #666;
 }
 
@@ -1024,6 +1024,7 @@ td {
 
       /* Telas pequenas */
     @media (max-width: 576px) {
+      
       body {
         padding-top: 100px;
       }
@@ -1035,9 +1036,9 @@ td {
    .text-eventos {
       color: #df6819;
       text-align: center;
-      font-size: 12px;
+      font-size: 13x;
 
-   }
+   }p
       
       .logo img {
           height: 40px;
@@ -1186,7 +1187,7 @@ td {
         /* Ajuste extra para telas muito pequenas (320px) */
     @media (max-width: 320px) {
      html {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
      }
       .links-container {
         gap: 10px; /* Espaçamento ainda maior */
@@ -1209,5 +1210,7 @@ td {
   align-items: left;
   font-size: 15px;
 }
+
+
 
     }
