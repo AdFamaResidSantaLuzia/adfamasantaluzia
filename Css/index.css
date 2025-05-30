@@ -803,6 +803,23 @@ td {
     color: #666;
 }
 
+.nav-link-contraste {
+  background-color: #df681913;
+  padding: 5px 12px;                    /* espaço interno */
+  border-radius: 20px;                  /* cantos arredondados */
+  display: inline-block;                /* garante que o fundo se ajuste */
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* espaço entre os botões */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* remove espaço extra do último */
+}
+
+
 /* MEDIA QUERIES */
 /* ADPATAÇÕES COM DIFERENTES TELAS */
     
@@ -852,6 +869,16 @@ td {
   }
       .links-rodape a {
         font-size: 0.9rem;
+  }
+
+   .navbar-nav {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+    margin: 6px 4px;
   }
       }
     
