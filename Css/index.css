@@ -893,6 +893,10 @@ td {
     margin: 20px 15px;
     border-radius: 8px;
   }
+
+  .logo img {
+      height: 50px;
+    }
       
       h2 {
         font-size: 1.5rem;
@@ -1038,10 +1042,10 @@ td {
       text-align: center;
       font-size: 13x;
 
-   }p
+   }
       
       .logo img {
-          height: 40px;
+          height: 45px;
           transition: all 0.3s ease;
       }
 
